@@ -9,8 +9,8 @@ try {
 	$top = $cli->request('GET', $topUrl);
 	$loginForm = $top->filter('form')->form();
 	$value = $loginForm->getValues();
-	$value['user[email]'] = '#######';
-	$value['user[password]'] = 'saibaiman';
+	$value['user[email]'] = 'メールアドレス';
+	$value['user[password]'] = 'パスワード';
 	$method = $loginForm->getMethod();
 	$url = $loginForm->getUri();
 	$crawler = $cli->request($method, $url, $value);
