@@ -9,7 +9,7 @@ try {
 	$top = $cli->request('GET', $topUrl);
 	$loginForm = $top->filter('form')->form();
 	$value = $loginForm->getValues();
-	$value['user[email]'] = 'nagainozomi.19350511@gmail.com';
+	$value['user[email]'] = '#######';
 	$value['user[password]'] = 'saibaiman';
 	$method = $loginForm->getMethod();
 	$url = $loginForm->getUri();
