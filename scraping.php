@@ -5,7 +5,7 @@ use Goutte\Client;
 
 try {
 	$cli = new Client();
-	$topUrl = 'https://jeek.jp/sign_in';
+	$topUrl = 'サインインのURL';
 	$top = $cli->request('GET', $topUrl);
 	$loginForm = $top->filter('form')->form();
 	$value = $loginForm->getValues();
